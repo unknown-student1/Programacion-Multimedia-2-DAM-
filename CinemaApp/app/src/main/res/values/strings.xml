@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">2Cinema</string>
+
+    <!-- General -->
+    <string name="btn_return">Volver</string>
+
+    <!-- LoginFragment -->
+    <string name="login_title">- INICIO DE SESION -</string>
+    <string name="msg_main_welcome">Bienvenido a 2Cinema</string>
+    <string name="et_main_hint">Usuario</string>
+    <string name="msg_main_advise">Introduce tu nombre</string>
+    <string name="btn_main_login">Iniciar sesión</string>
+
+    <!-- MenuFragment -->
+    <string name="main_menu_title">- PRINCIPAL -</string>
+    <string name="msg_menu_welcome">%s, Bienvenido a 2Cinema</string>
+    <string name="btn_favorites">Mis Favoritas</string>
+    <string name="btn_catalog">Catálogo</string>
+    <string name="img_description_settings">Ajustes</string>
+    <string name="img_description_userInfo">Informacion usuario</string>
+
+    <!-- CreditFragment -->
+    <string name="credit_title">- AJUSTES -</string>
+    <string name="btn_contact">Contactar</string>
+    <string name="credit_version">"Hola $s, estás usando la versión 1.0 de 2Cinema"</string>
+    <string name="credit_description">
+        Explora un amplio catálogo de películas, busca por título, género o director y añade tus
+        favoritas a tu lista personalizada. Obtén información detallada sobre cada película,
+        incluyendo sinopsis, reparto y tráilers.
+    </string>
+    <string name="img_description_light">Modo claro</string>
+    <string name="img_description_dark">Modo oscuro</string>
+    <string name="languaje_es">Español</string>
+    <string name="languaje_en">English</string>
+    <string name="languaje_actual">Español</string>
+
+    <!-- UserInfoFragment -->
+    <string name="user_info_title">- USUARIO -</string>
+    <string name="user_name">Nombre de usuario: %s</string>
+    <string name="user_fav_Count0">Ninguna pelicula añadida a tus favoritos</string>
+    <string name="user_fav_Count1">%s pelicula añadida a tu lista</string>
+    <string name="user_fav_Count">%s peliculas añadidas a tu lista</string>
+
+
+    <!-- item_Film -->
+    <string name="Title">Titulo</string>
+    <string name="YearTit">Año</string>
+    <string name="CompanyTit">Estudio</string>
+    <string name="SinopsisTit">Sinopsis</string>
+
+    <!-- ItemList -->
+    <string name="item_list_title">- CATÁLOGO -</string>
+    <string name="item_image_description">Poster</string>
+    <string name="btn_favourites">Favoritos</string>
+
+    <!-- DetailItemList -->
+    <string name="detail_item_list_title">- DETALLES -</string>
+
+    <!-- FavItemList -->
+    <string name="fav_item_list_title">- FAVORITOS -</string>
+
+    <!-- FavDetailItemList -->
+    <string name="fav_item_fab_description">Añadir comentario</string>
+
+</resources>

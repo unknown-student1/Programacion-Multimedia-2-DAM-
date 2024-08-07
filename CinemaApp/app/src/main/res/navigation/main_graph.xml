@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/creditFragment"
+        android:name="com.example.proyecto_app.CreditFragment"
+        android:label="fragment_credit"
+        tools:layout="@layout/fragment_credit" >
+        <action
+            android:id="@+id/action_creditFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.proyecto_app.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_creditFragment"
+            app:destination="@id/creditFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.proyecto_app.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.example.proyecto_app.catalog.itemList.ItemListFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_itemListFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_detailItemFragment"
+            app:destination="@id/detailItemFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_favItemListFragment"
+            app:destination="@id/favItemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailItemFragment"
+        android:name="com.example.proyecto_app.catalog.itemList.DetailItemFragment"
+        android:label="fragment_detail_item"
+        tools:layout="@layout/fragment_detail_item" >
+        <argument
+            android:name="filmId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailItemFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favItemListFragment"
+        android:name="com.example.proyecto_app.catalog.favItemList.FavItemListFragment"
+        android:label="fragment_fav_item_list"
+        tools:layout="@layout/fragment_fav_item_list" >
+        <action
+            android:id="@+id/action_favItemListFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+        <action
+            android:id="@+id/action_favItemListFragment_to_favDetailItemFragment"
+            app:destination="@id/favDetailItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favDetailItemFragment"
+        android:name="com.example.proyecto_app.catalog.favItemList.FavDetailItemFragment"
+        android:label="fragment_fav_detail_item"
+        tools:layout="@layout/fragment_fav_detail_item" >
+        <argument
+            android:name="filmId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_favDetailItemFragment_to_favItemListFragment"
+            app:destination="@id/favItemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.proyecto_app.UserInfoFragment"
+        android:label="fragment_user_info"
+        tools:layout="@layout/fragment_user_info" >
+        <action
+            android:id="@+id/action_userInfoFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>
