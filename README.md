@@ -1,4 +1,4 @@
-# Programación de servicios y procesos 2º DAW
+# Programación multimedia y de dispositivos moviles 2º DAW
 
 ## Descripción
-Este repositorio contiene los proyectos y ejercicios realizados durante el curso de Programación de servicios y procesos de 2º DAW.
+Este repositorio contiene los proyectos y ejercicios realizados durante el curso de Programación multimedia y de dispositivos moviles de 2º DAW.
